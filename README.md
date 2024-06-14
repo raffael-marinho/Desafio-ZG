@@ -16,4 +16,10 @@
 
 - adicionar alguma biblioteca que emita som para que a musica possa ser tocada e deixe mais dinamico a experiencia do usuario com o programa;
 
+## Referência:
+
+https://www.youtube.com/watch?v=EDMkM899nkc&ab_channel=padremarceloVEVO
+
+https://www.letras.mus.br/padre-marcelo-rossi/47896/
+
 ![print](./images/img.png)

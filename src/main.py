@@ -1,4 +1,8 @@
 #-*- coding: utf-8 -*-
+import pygame
+
+pygame.mixer.init()
+
 refrao1 = "Erguei as mãos e dai glória a Deus\nErguei as mãos e dai glória a Deus\nErguei as mãos\nE cantai como os filhos do Senhor\n"
 animais = ["O elefante","E os passarinhos","A minhoquinha","E os pinguins","O canguru","E o sapinho"]
 strof1 = f"Os animaizinhos subiram de dois em dois\nOs animaizinhos subiram de dois em dois\n{0}\n"
@@ -27,4 +31,11 @@ def tocar_musica():
         print("\n" + refrao2)
         for j in range(i):
             print(membros_acoes[j],end=" ")
+
 tocar_musica()
+
+pygame.mixer.music.load("musica/musica.mp3")
+pygame.mixer.music.play()
+
+while pygame.mixer.music.get_busy():
+    pygame.time.Clock().tick(10)

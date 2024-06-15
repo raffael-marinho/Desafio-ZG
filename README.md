@@ -1,4 +1,4 @@
-# Desafio-ZG
+# Desafio-ZG Soluções
 
 ## Desafio da Música Erguei As Mãos
 

@@ -14,7 +14,26 @@ parte2 = "E atenção agora, porque"
 refrao2 = "\nO senhor tem muitos filhos\nMuitos filhos ele tem\nEu sou um deles, você também\nLouvemos ao senhor\n"
 membros_acoes = ["Braço direito",", braço esquerdo\n","Perna direita",", perna esquerda\n","Balanca a cabeça",", dá uma voltinha\n","Dá um pulinho","e abraça o irmão"]
 
+def trocar_animal(animais):
+    resposta = input("Você gostaria de trocar o nome de algum animal? (sim/não): ").strip().lower()
+    if resposta == 'sim':
+        animal_para_trocar = input("Qual animal você gostaria de trocar?: ").strip()
+        
+        if animal_para_trocar in animais:
+            novo_animal = input(f"Qual é o novo nome para {animal_para_trocar}?: ").strip()
+            
+            indice = animais.index(animal_para_trocar)
+            
+            animais[indice] = novo_animal
+            
+            print(f"A lista atualizada de animais é: {animais}")
+        else:
+            print(f"O animal {animal_para_trocar} não foi encontrado na lista.")
+    else:
+        print("Nenhuma alteração foi feita.")
+
 def tocar_musica1():
+    trocar_animal(animais)
     print(refrao1)
     for indice,animal in enumerate(animais):
         if indice%2==0:

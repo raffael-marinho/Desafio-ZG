@@ -35,22 +35,8 @@ def tocar_musica2():
             print(membros_acoes[j],end=" ")
 
 def tocar_musica_completa():
-    print(refrao1)
-    for indice,animal in enumerate(animais):
-        if indice%2==0:
-            strof_completa = f"Os animaizinhos subiram de dois em dois\nOs animaizinhos subiram de dois em dois\n{animal}"
-        elif indice%2==1:
-            strof_completa = f"{animal}, como os filhos do Senhor\n"
-        print(strof_completa)
-    print(strof3)
-    print(parte1)
-    for _ in range(3):
-        print(refrao1)
-    print(parte2)
-    for i in range(1, len(membros_acoes)+1):
-        print("\n" + refrao2)
-        for j in range(i):
-            print(membros_acoes[j],end=" ")
+    tocar_musica1()
+    tocar_musica2()
 
 while True:
     print("Escolha uma opção:")

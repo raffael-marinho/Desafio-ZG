@@ -68,7 +68,7 @@ while True:
     elif escolha == '3':
         tocar_musica_completa()
     elif escolha == '0':
-        print("Sair")
+        print("Saindo...")
         break
     else:
         print("Opção inválida. Por favor, escolha uma opção válida.")

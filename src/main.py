@@ -14,7 +14,27 @@ parte2 = "E atenção agora, porque"
 refrao2 = "\nO senhor tem muitos filhos\nMuitos filhos ele tem\nEu sou um deles, você também\nLouvemos ao senhor\n"
 membros_acoes = ["Braço direito",", braço esquerdo\n","Perna direita",", perna esquerda\n","Balanca a cabeça",", dá uma voltinha\n","Dá um pulinho","e abraça o irmão"]
 
-def tocar_musica():
+def tocar_musica1():
+    print(refrao1)
+    for indice,animal in enumerate(animais):
+        if indice%2==0:
+            strof_completa = f"Os animaizinhos subiram de dois em dois\nOs animaizinhos subiram de dois em dois\n{animal}"
+        elif indice%2==1:
+            strof_completa = f"{animal}, como os filhos do Senhor\n"
+        print(strof_completa)
+    print(strof3)
+    print(parte1)
+    for _ in range(3):
+        print(refrao1)
+
+def tocar_musica2():
+    print(parte2)
+    for i in range(1, len(membros_acoes)+1):
+        print("\n" + refrao2)
+        for j in range(i):
+            print(membros_acoes[j],end=" ")
+
+def tocar_musica_completa():
     print(refrao1)
     for indice,animal in enumerate(animais):
         if indice%2==0:
@@ -32,7 +52,27 @@ def tocar_musica():
         for j in range(i):
             print(membros_acoes[j],end=" ")
 
-tocar_musica()
+while True:
+    print("Escolha uma opção:")
+    print("1 - Tocar a primeira música")
+    print("2 - Tocar a segunda música")
+    print("3 - Tocar a música completa")
+    print("0 - Sair")
+    
+    escolha = input("Digite sua escolha: ")
+    
+    if escolha == '1':
+        tocar_musica1()
+    elif escolha == '2':
+        tocar_musica2()
+    elif escolha == '3':
+        tocar_musica_completa()
+    elif escolha == '0':
+        print("Sair")
+        break
+    else:
+        print("Opção inválida. Por favor, escolha uma opção válida.")
+
 
 pygame.mixer.music.load("musica/musica.mp3")
 pygame.mixer.music.play()

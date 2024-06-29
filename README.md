@@ -18,8 +18,6 @@
 
 - desenvolver melhor o codigo, um POO(orientação a objeto poderia ajudar pelo fator de ter termos repetitivos);
 
-- adicionar alguma biblioteca que emita som para que a musica possa ser tocada e deixe mais dinamico a experiencia do usuario com o programa;
-
 - adicionar um docker para ficar mais automotivo e um requirement 
 
 ## Desenvolvimento
